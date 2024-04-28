@@ -1,0 +1,399 @@
+.player-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Ajouter "1fr" si ajout d'un projet supplémentaire*/
+  grid-gap: 20px;
+  height: calc(100% - 30px);
+  padding: 0 20px;
+}
+
+#main_container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  margin: 40px 0 0 0px;
+  background-color: #fff;
+  opacity: 0.5;
+  display: flex;
+  z-index: 11;
+}
+header a img {
+  width: 65px;
+  margin: 7px 10px 0 60px;
+}
+header a img:hover {
+  transition: 1s ease;
+  /* transform: rotate(-360deg); */
+}
+header nav {
+  width: 60%;
+  display: flex;
+  margin: 0 auto 0 auto;
+}
+header nav ul {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav li {
+  margin: 30px 0 0 0;
+}
+header nav li:hover {
+  border-bottom: 5px solid #f81e00;
+}
+header nav li a {
+  color: #000;
+  font-weight: bold;
+}
+header nav li a:hover {
+  color: #f81e00;
+}
+header nav ul li a {
+  padding: 30px 30px;
+}
+header nav ul li a i {
+  color: #000;
+  font-size: 20px;
+}
+header nav ul li:hover a i {
+  color: #f81e00;
+}
+
+#home {
+  background-size: cover;
+  background-position: 0% 0%;
+  width: 100%;
+  height: 1030px;
+}
+#home .fa-facebook-f {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  margin: 8px 0 0 0;
+}
+#home .fa-linkedin-in {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  margin: 8px 0 0 0;
+}
+#home #iconeHomeLinkedin {
+  padding: 0px 30px 0 20px;
+  position: absolute;
+  margin: 3px 0 0 45px;
+  height: 40px;
+  z-index: 11;
+}
+#home #iconeHomeFacebook {
+  padding: 0px 30px 0 20px;
+  position: absolute;
+  margin: 2px 0 0 5px;
+  height: 40px;
+  z-index: 11;
+}
+#home #iconeHomeFacebook:hover i,
+#iconeHomeLinkedin:hover i {
+  color: #f81e00;
+  cursor: pointer;
+}
+#home .fa-phone-volume,
+.fa-envelope {
+  font-size: 20px;
+  color: #fff;
+  margin: 8px 0 0 0;
+}
+#home #telHome {
+  color: #fff;
+  position: absolute;
+  right: 40px;
+}
+#home #mailHome {
+  color: #fff;
+  position: absolute;
+  right: 200px;
+}
+#home h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 480px;
+  font-size: 40px;
+  opacity: 0;
+}
+#home #infoScroll {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  top: 790px;
+  left: 47.9%;
+}
+#home #cercleInfoScroll {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 840px;
+  left: 48.9%;
+}
+#home #cercleInfoScroll .fa-angle-down {
+  color: #fff;
+  font-size: 30px;
+  margin: 8px 0 0 13px;
+}
+
+/******************************************** A PROPOS ************************************/
+
+#propos {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+}
+#propos h2 {
+  text-align: center;
+  padding: 40px 0 40px 0;
+  font-size: 30px;
+}
+#propos h3 {
+  color: #f81e00;
+  margin: 0px 20% 40px 20%;
+  font-size: 25px;
+}
+#propos p {
+  color: #000;
+  margin: 0px 20% 20px 20%;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+#propos .marginBotSectionPropos {
+  padding: 0 0 75px 0;
+  color: #000;
+  margin: 0px 20% 20px 20%;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/******************************************** LISERET 1 ************************************/
+
+#liseret1 {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+#liseret1 .details {
+  color: #fff;
+  padding: 65px 0 0 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+#liseret1 hr {
+  width: 30%;
+  height: 3px;
+  border: none;
+  background-color: #f81e00;
+  margin: 17.5px auto 17.5px auto;
+}
+#liseret1 .details2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#liseret2 {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#liseret2 span {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+#liseret2 .details {
+  color: #f81e00;
+  padding: 125px 0 0 0;
+  font-size: 30px;
+}
+
+/******************************************** PROJET ************************************/
+
+#projet1 {
+  height: 500px;
+  width: 100%;
+  background-color: #fff;
+}
+#projet1 h2 {
+  text-align: center;
+  padding: 40px 0 0 0;
+  font-size: 30px;
+  margin: 0 0 35px 0;
+}
+#projet1 .row {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#projet1 #projetRealise1 {
+  width: 20%;
+  height: 250px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 20px 0 0 0;
+}
+#projet1 #projetRealise1:hover {
+  opacity: 0.7;
+  transition: 1s ease;
+  cursor: pointer;
+}
+#projet1 #projetRealise1 a {
+  padding: 0px 175px 230px 175px;
+}
+
+#projet2 {
+  height: 500px;
+  width: 100%;
+  background-color: #fff;
+}
+#projet2 h2 {
+  text-align: center;
+  padding: 40px 0 0 0;
+  font-size: 30px;
+  margin: 0 0 35px 0;
+}
+#projet2 .row {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#projet2 #projetRealise1 {
+  width: 20%;
+  height: 250px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 20px 0 0 0;
+}
+#projet2 #projetRealise1:hover {
+  opacity: 0.7;
+  transition: 1s ease;
+  cursor: pointer;
+}
+#projet2 #projetRealise1 a {
+  padding: 0px 175px 230px 175px;
+}
+
+/******************************************** LISERET 3 ************************************/
+
+#liseret3 {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#liseret3 span {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+#liseret3 .details {
+  color: #fff;
+  padding: 125px 0 0 0;
+  font-size: 30px;
+}
+
+/******************************************** CONTACT ************************************/
+
+#contact {
+  height: 630px;
+  width: 100%;
+  background-color: #fff;
+}
+#contact h2 {
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-size: 30px;
+}
+#contact #contactProjet {
+  width: 60%;
+  height: 65px;
+  background-color: #cdcdcd;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  color: #000;
+}
+#contact #contactProjet p {
+  font-size: 20px;
+  padding: 20px 0 0 0;
+}
+#contact #contactProjet span {
+  color: #f81e00;
+}
+#contact #containerInfoContact {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto 0 auto;
+}
+#contact #containerInfoContact #infoContact {
+  width: 100%;
+  height: 500px;
+}
+#contact #containerInfoContact #infoContact li {
+  margin: 45px 0 45px 0;
+}
+#contact #containerInfoContact #infoContact ul li i {
+  float: left;
+  color: #f81e00;
+  font-size: 30px;
+  margin: 5px 20px 0 250px;
+}
+#contact #containerInfoContact #infoContact ul li .intitulerContact {
+  font-weight: bold;
+  font-size: 17.5px;
+}
+#contact #containerInfoContact #googleMap {
+  width: 100%;
+  height: 400px;
+}
+
+/******************************************** FOOTER ************************************/
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #666;
+  text-align: center;
+  color: #fff;
+}
+footer p {
+  padding: 40px 0 0 0;
+}
+
+/******************************************** SCROLLUP ************************************/
+
+#scrollUp {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  opacity: 0.75;
+}
+#scrollUp:hover {
+  opacity: 1;
+}
