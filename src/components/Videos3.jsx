@@ -16,7 +16,8 @@ export default function Videos3() {
   return (
     <div className="player-wrapper">
       <ReactPlayer url={Video1} {...playerProps} />
-      <ReactPlayer url={Video2} {...playerProps} />
+      <ReactPlayer url={"https://youtu.be/h5KI42Wg6y8"} {...playerProps} />
+      <ReactPlayer url={"https://www.youtube.com/watch?v=2zWbYa1oOQc"} {...playerProps} />
     </div>
   )
 }
